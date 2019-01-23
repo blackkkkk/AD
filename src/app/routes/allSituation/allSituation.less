@@ -1,0 +1,87 @@
+@import "../../../styles/theme.less";
+div#allSituationComponent{
+  >div.each{
+    padding: 0 10px;
+    >div.each-child{
+      background-color: @ad-white-color;
+      height: 98px;
+      padding: 0 14px 0 10px;
+      box-shadow: 0 2px 5px 0 #E5ECF1;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      >div.ng-icon{
+        flex: 1;
+        flex-shrink: 0;
+        >div.bg-icon{
+          width: 64px;
+          height: 64px;
+          background: center center no-repeat;
+          background-size: 100% 100%;
+        }
+        >div.cash{
+          background-image: url("../../../assets/icon_home_balance.png");
+        }
+        >div.virtual{
+          background-image: url("../../../assets/icon_home_virtual.png");
+        }
+        >div.time{
+          background-image: url("../../../assets/icon_home_time.png");
+        }
+        >div.warming{
+          background-image: url("../../../assets/icon_home_warming.png");
+        }
+        >div.temp{
+          background-image: url("../../../assets/icon_home_temp.png");
+        }
+        >div.adstati{
+          background-image: url("../../../assets/icon_home_adstati.png");
+        }
+      }
+      >div.desc{
+        flex: 6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 24px;
+        >div.desc-l{
+          >div.cost{
+            line-height: 36px;
+          }
+          >div.name{
+            line-height: 28px;
+          }
+        }
+        >div.desc-r{
+        }
+      }
+      >div.notice{
+        flex: 6;
+        padding-left: 24px;
+        >div.title{
+          line-height: 36px;
+        }
+        >div.outOfDate{
+          line-height: 28px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      >div.adstati{
+        flex: 6;
+        >div.statistics{
+          >div.item{
+            display: flex;
+            >div.item-l{
+              flex: 4
+            }
+            >div.item-r{
+              flex: 6
+            }
+          }
+        }
+      }
+    }
+  }
+}

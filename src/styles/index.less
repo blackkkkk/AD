@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+.ad-primary{
+  color: @primary-color;
+}
+.ad-text-white{
+  color: @ad-white-color;
+}
+.ad-text-light-green{
+  color: @ad-light-green-color;
+}
+.ad-text-light-gray{
+  color: @ad-text-light-gray-color;
+}
+.ad-text-blue{
+  color: @ad-blue-color;
+}
+.ad-text-red{
+  color: @ad-red-color;
+}
+.ad-border-blue{
+  border-color: @ad-blue-color;
+}
+.ad-bg-blue{
+  background-color: @ad-blue-color;
+}
+.ad-font-size-20{
+  font-size: 20px;
+}
+.ad-font-size-12{
+  font-size: 12px;
+}
+.ad-font-size-15{
+  font-size: 15px;
+}
+.ad-font-size-18{
+  font-size: 18px;
+}
+.ad-font-bold{
+  font-weight: bold;
+}
+//默认按钮样式
+.ad-blue-outline-btn{
+  .ad-border-blue();
+  .ad-text-blue();
+}
+.ad-blue-outline-btn:hover{
+  .ad-bg-blue();
+  .ad-border-blue();
+  .ad-text-white();
+}

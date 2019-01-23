@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  templateUrl: './allSituation.component.html'
+  selector: 'page-allSituation',
+  templateUrl: './allSituation.component.html',
+  styleUrls: ['./allSituation.less']
 })
 
 export class AllSituationComponent implements OnInit{
