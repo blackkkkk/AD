@@ -18,6 +18,7 @@ import { UserLockComponent } from './passport/lock/lock.component';
 import { HomeComponent } from './home/home.component';
 import { AdvertisingComponent } from './advertising/advertising.component';
 import { AllSituationComponent } from './allSituation/allSituation.component';
+import { LatestAdComponent } from './latestAd/latestAd.component';
 
 const routes: Routes = [
   {
@@ -32,7 +33,8 @@ const routes: Routes = [
         data: { title: '首页' },
         children: [
           {path: '', redirectTo: 'allSituation', pathMatch: 'full'},
-          {path: 'allSituation', component: AllSituationComponent}
+          {path: 'allSituation', component: AllSituationComponent},
+          {path: 'lastestAd', component: LatestAdComponent}
         ]
       },
       { path: 'advertising', component: AdvertisingComponent},

@@ -1,83 +1,158 @@
 @import "../../../styles/theme.less";
 div#allSituationComponent{
-  >div.each{
-    padding: 0 10px;
-    >div.each-child{
-      background-color: @ad-white-color;
-      height: 98px;
-      padding: 0 14px 0 10px;
-      box-shadow: 0 2px 5px 0 #E5ECF1;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-      >div.ng-icon{
-        flex: 1;
-        flex-shrink: 0;
-        >div.bg-icon{
-          width: 64px;
-          height: 64px;
-          background: center center no-repeat;
-          background-size: 100% 100%;
-        }
-        >div.cash{
-          background-image: url("../../../assets/icon_home_balance.png");
-        }
-        >div.virtual{
-          background-image: url("../../../assets/icon_home_virtual.png");
-        }
-        >div.time{
-          background-image: url("../../../assets/icon_home_time.png");
-        }
-        >div.warming{
-          background-image: url("../../../assets/icon_home_warming.png");
-        }
-        >div.temp{
-          background-image: url("../../../assets/icon_home_temp.png");
-        }
-        >div.adstati{
-          background-image: url("../../../assets/icon_home_adstati.png");
-        }
-      }
-      >div.desc{
-        flex: 6;
+  >div#each-list{
+    >div.each{
+      >div.each-child{
+        background-color: @ad-white-color;
+        height: 98px;
+        padding: 0 14px 0 10px;
+        box-shadow: 0 2px 5px 0 #E5ECF1;
+        border-radius: 4px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-left: 24px;
-        >div.desc-l{
-          >div.cost{
+        margin-bottom: 15px;
+        >div.ng-icon{
+          flex: 1;
+          flex-shrink: 0;
+          >div.bg-icon{
+            width: 64px;
+            height: 64px;
+            background: center center no-repeat;
+            background-size: 100% 100%;
+          }
+          >div.cash{
+            background-image: url("../../../assets/icon_home_balance.png");
+          }
+          >div.virtual{
+            background-image: url("../../../assets/icon_home_virtual.png");
+          }
+          >div.time{
+            background-image: url("../../../assets/icon_home_time.png");
+          }
+          >div.warming{
+            background-image: url("../../../assets/icon_home_warming.png");
+          }
+          >div.temp{
+            background-image: url("../../../assets/icon_home_temp.png");
+          }
+          >div.adstati{
+            background-image: url("../../../assets/icon_home_adstati.png");
+          }
+        }
+        >div.desc{
+          flex: 6;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 24px;
+          >div.desc-l{
+            >div.cost{
+              line-height: 36px;
+            }
+            >div.name{
+              line-height: 28px;
+            }
+          }
+          >div.desc-r{
+          }
+        }
+        >div.notice{
+          flex: 6;
+          padding-left: 24px;
+          >div.title{
             line-height: 36px;
           }
-          >div.name{
+          >div.outOfDate{
             line-height: 28px;
+            display: flex;
+            justify-content: space-between;
+            >div.name{
+              flex: 9;
+              width: 0;
+            }
+            >div.date{
+              flex: 1;
+            }
           }
         }
-        >div.desc-r{
-        }
-      }
-      >div.notice{
-        flex: 6;
-        padding-left: 24px;
-        >div.title{
-          line-height: 36px;
-        }
-        >div.outOfDate{
-          line-height: 28px;
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-      >div.adstati{
-        flex: 6;
-        >div.statistics{
-          >div.item{
-            display: flex;
-            >div.item-l{
-              flex: 4
+        >div.adstati{
+          flex: 6;
+          padding-left: 24px;
+          >div.statistics{
+            >div.item{
+              >div.item-l,>div.item-r{
+                display: inline-block;
+              }
+              >div.item-l{
+                width: 50px;
+              }
             }
-            >div.item-r{
-              flex: 6
+          }
+        }
+      }
+    }
+  }
+  >div#overall-situation{
+    box-shadow: 0 2px 5px 0 #E5ECF1;
+    border-radius: 4px;
+    border: none;
+    background: @ad-white-color;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    height: 330px;
+    >div.title{
+      //display: flex;
+      //align-items: center;
+      //justify-content: space-between;
+      div.name{
+        //float: left
+      }
+      nz-dropdown.select-btn{
+        float: right;
+      }
+    }
+    >div.reportBox{
+      position: relative;
+      height: 100%;
+      >div.demo-chart {
+        position: absolute;
+        width: 100%;
+        height: 260px;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+  >div#statistics-info{
+    margin-top: 15px;
+    >div.gutter-row{
+      >div.item{
+        box-shadow: 0 2px 5px 0 #E5ECF1;
+        border-radius: 4px;
+        padding: 0px 0 25px 0;
+        background-color: @ad-white-color;
+        >div.data-list{
+          margin: 10px 10px 0px 20px;
+          padding-left: 0px;
+          min-height: 170px;
+          >a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 24px;
+            padding: 4px 0;
+            font-size: 12px;
+            color: #666;
+          }
+          >a:hover{
+            >div:first-child{
+              color: @ad-blue-color;
             }
           }
         }

@@ -9,13 +9,22 @@
   color: @ad-light-green-color;
 }
 .ad-text-light-gray{
-  color: @ad-text-light-gray-color;
+  color: @ad-light-gray-color;
 }
 .ad-text-blue{
   color: @ad-blue-color;
 }
 .ad-text-red{
   color: @ad-red-color;
+}
+.ad-text-3{
+  color: @ad-3-color;
+}
+.ad-text-6{
+  color: @ad-6-color;
+}
+.ad-text-9{
+  color: @ad-9-color;
 }
 .ad-border-blue{
   border-color: @ad-blue-color;
@@ -47,4 +56,28 @@
   .ad-bg-blue();
   .ad-border-blue();
   .ad-text-white();
+}
+//默认标题样式
+.data-top{
+  padding: 5px 0 5px 0px;
+  line-height: 30px;
+  font-size: 14px;
+  border-bottom: 1px solid #ededed;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.data-top:before {
+  width: 3px;
+  height: 16px;
+  content: '';
+  background: #63D6EF;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+//省略号样式
+.ellipsis{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
 }

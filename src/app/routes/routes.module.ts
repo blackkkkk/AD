@@ -14,12 +14,14 @@ import { UserLockComponent } from './passport/lock/lock.component';
 import { HomeComponent } from './home/home.component';
 import { AdvertisingComponent } from './advertising/advertising.component';
 import { AllSituationComponent } from './allSituation/allSituation.component';
+import { LatestAdComponent } from './latestAd/latestAd.component';
 
 const COMPONENTS = [
   DashboardComponent,
   HomeComponent,
   AdvertisingComponent,
   AllSituationComponent,
+  LatestAdComponent,
   // passport pages
   UserLoginComponent,
   UserRegisterComponent,

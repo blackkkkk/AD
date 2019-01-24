@@ -4,9 +4,50 @@ div#homeComponent{
   height: 100%;
   padding: 15px 0;
   div.home-left{
-    background-color: @ad-white-color;
-    height: 100%;
+    height: calc(100%);
+    >div.left-nav{
+      background-color: @ad-white-color;
+      box-shadow: 0 2px 5px 0 #E5ECF1;
+      height: 100%;
+      >div{
+        padding: 10px 10px 10px 20px;
+      }
+      >div.tag.active{
+        background: #eef7fe;
+        color: #333;
+      }
+      >div.tag{
+        border-bottom: 1px solid #ededed;
+      }
+      >div.tag:hover{
+        color: #23527c;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      >div.latest-item{
+        padding: 0;
+        >a{
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 12px 8px 12px 20px;
+          width: 100%;
+        }
+      }
+      >div.latest-item:hover{
+        background: #eef7fe;
+        cursor: pointer;
+        >a{
+          color: @ad-blue-color;
+        }
+      }
+      div.fillIn{
+        width: 100%;
+        //height: calc(100% - );
+      }
+    }
   }
-
 }
 

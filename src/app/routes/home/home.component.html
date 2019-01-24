@@ -1,9 +1,14 @@
-<div nz-row class="container" id="homeComponent">
-  <div nz-col nzSpan="3" class="home-left">
-    <div>整体情况</div>
-    <div>最近创建广告</div>
+<div nz-row nzGutter="16" class="container" id="homeComponent">
+  <div nz-col nzSpan="3" class="gutter-row home-left ad-font-size-12">
+    <div class="left-nav ad-text-9">
+      <div class="tag"><a href="#">整体情况</a></div>
+      <div class="latest ad-text-3">最近创建广告</div>
+      <div class="latest-item"><a routerLink="/home/lastestAd">招聘销售人员</a></div>
+      <div class="fillIn"></div>
+    </div>
   </div>
-  <div nz-col nzSpan="21" class="home-right">
+  <div nz-col nzSpan="21" class="gutter-row home-right">
     <router-outlet></router-outlet>
   </div>
 </div>
+
